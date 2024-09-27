@@ -3,7 +3,7 @@
 #include <dirent.h>
 #include <stdlib.h>
 
-#define PREFIX "[SPOTIFY-DOWNLOADER.COM]"  // Define the prefix we want to remove
+#define PREFIX "..."  // Define the prefix we want to remove
 
 void rename_files(const char *directory) {
     struct dirent *entry;
@@ -42,7 +42,7 @@ void rename_files(const char *directory) {
 }
 
 int main() {
-    const char *directory = "Music Renamed";  // Use current directory or specify the directory path
+    const char *directory = "...";  // Use current directory or specify the directory path
     rename_files(directory);
 
     return 0;
